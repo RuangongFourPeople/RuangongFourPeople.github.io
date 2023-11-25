@@ -1,11 +1,26 @@
 
-<div class="header-banner__inner">
-  <img class="header-imag" alt="高光谱图像处理" width="162" height="78" src="D:\AAA中国海洋大学\11111111111——2023秋\软件工程\11111软工项目文件夹_前端\RuangongFourPeople.github.io\picture\header.jpg">
-</div>
-<form action="" enctype="multipart/form-data" method="post" name="form1" id="form1">
-   文件：<input type="file" name="myFile" id="myFile" onchange="getFileContent();" multiple>
-     <!-- 进度条 -->
-    <input type="submit">
-  </form>
-  <!-- 图片展示区域 -->
-  <ul id="imgList"></ul>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>高光谱图像处理</title>
+    <style>
+        #image-preview {
+            max-width: 300px;
+            max-height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-banner__inner">
+        <img class="header-imag" alt="高光谱图像处理" width="162" height="78" src="D:\AAA中国海洋大学\11111111111——2023秋\软件工程\11111软工项目文件夹_前端\RuangongFourPeople.github.io\picture\header.jpg">
+    </div>
+    <form action="" enctype="multipart/form-data" method="post" name="form1" id="form1">
+        文件：<input type="file" name="myFile" id="myFile" onchange="getFileContent();" multiple>
+        <!-- 进度条 -->
+        <input type="submit">
+    </form>
+    <!-- 图片展示区域 -->
+    <ul id="imgList"></ul>
+</body>
+</html>
+
