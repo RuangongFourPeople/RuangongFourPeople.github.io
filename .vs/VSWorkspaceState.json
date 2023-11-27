@@ -2,12 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\css",
-    "\\assets\\fonts",
-    "\\assets\\vendors",
-    "\\nexus",
-    "\\nexus\\next"
+    "\\assets\\PHP",
+    "\\nexus"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\assets\\PHP\\upload.php",
   "PreviewInSolutionExplorer": false
 }

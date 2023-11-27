@@ -20,7 +20,12 @@
         <i class="icon icon-quotes-left"></i>
       </span>
       <!--写按钮的地方-->
-      <button type="button">上传图片</button>
+      <form class="upload-form" action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="imageInput" accept="image/*">
+        <button type="submit" name="submit">Upload</button>
+      </form>
+      <img class="uploaded-image" src="<?php echo isset($_SESSION['image']) ? $_SESSION['image'] : ''; ?>" alt="Uploaded Image">
+
       <span class="quote-icon quote-icon-end animate-slide-in-up">
         <i class="icon icon-quotes-right"></i>
       </span>
