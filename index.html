@@ -15,21 +15,15 @@
   <div class="高光谱图像分类">
     <h1 class="animate-slide-in-down">高光谱图像分类</h1>
     <div class="quote">
-      <span class="quote-line quote-line-start animate-slide-in-left"></span>
-      <span class="quote-icon quote-icon-start animate-slide-in-down">
-        <i class="icon icon-quotes-left"></i>
-      </span>
-      <!--写按钮的地方-->
-      <form class="upload-form" action="upload.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="imageInput" accept="image/*">
-        <button type="submit" name="submit">Upload</button>
-      </form>
-      <img class="uploaded-image" src="<?php echo isset($_SESSION['image']) ? $_SESSION['image'] : ''; ?>" alt="Uploaded Image">
-
-      <span class="quote-icon quote-icon-end animate-slide-in-up">
-        <i class="icon icon-quotes-right"></i>
-      </span>
-      <span class="quote-line quote-line-end animate-slide-in-right"></span>
+      <span class="quote-line quote-line-start animate-slide-in-left"></span>   
+    </div>
+    <div class="drag-area">
+      <div class="icon">
+        <img src="assets\photos\upload.png" alt="上传图标">
+      </div>
+      <header>Drag & Drop to Uplwad file</header>
+      <span>or</span>
+      <button>Browse File</button>
     </div>
     <div class="quote">
       <span class="quote-line quote-line-start animate-slide-in-left"></span>
@@ -37,7 +31,7 @@
         <i class="icon icon-quotes-left"></i>
       </span>
       <!--图片展示区域-->
-
+      
       <span class="quote-icon quote-icon-end animate-slide-in-up">
         <i class="icon icon-quotes-right"></i>
       </span>
