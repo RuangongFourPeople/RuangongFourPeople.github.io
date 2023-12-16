@@ -7,8 +7,11 @@
   <title>高光谱图像分类</title>
   <meta name="Description" content="Home Page of iissnan">
   <meta name="color-scheme" content="dark light">
+  <script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
   <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
   <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+  <script type="text/javascript" src="assets/vendors/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="assets\java.js"></script>
 </head>
 
 <body>
@@ -23,7 +26,14 @@
       </div>
       <header>Drag & Drop to Uplwad file</header>
       <span>or</span>
-      <button>Browse File</button>
+      <label for="file-upload" class="custom-file-upload">
+        Custom Upload
+    </label>
+    <formid="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+      <input id="file-upload" type="file" name="file" onchange="upload()">
+      <div id="message"></div> <!-- 用于显示消息的元素 -->
+    </formid>
+    
     </div>
     <div class="quote">
       <span class="quote-line quote-line-start animate-slide-in-left"></span>
@@ -40,15 +50,6 @@
     <div class="links">
       <a href="https://github.com/233MAKA" class="animate-slide-in-down">GitHub</a>
       <a href="https://www.cnblogs.com/makabakaJ/articles/17856682.html" class="animate-slide-in-down">Handbook</a>
-    </div>
-    <div class="location">
-      <span class="location-icon animate-slide-in-up">
-        <i class="icon icon-map-pin"></i>
-      </span>
-      <span class="location-text animate-slide-in-down">XiaMen - China</span>
-    </div>
-    <div class="relocating">
-      Navigating to: <span class="relocate-location">QingDao--China</span>...
     </div>
   </div>
 
@@ -68,7 +69,6 @@
           .then(animateTitle)
           .then(animateQuote)
           .then(animateLinks)
-          .then(animateLocation);
       }
 
       function animateTitle() {
